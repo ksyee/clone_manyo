@@ -1,0 +1,142 @@
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-width: 1280px;
+  height: 411px;
+}
+
+.footer-wrap {
+  position: relative;
+  color: #ffffff;
+  padding: 60px 40px 120px;
+  background-color: var(--primary-color2);
+}
+
+.footer-wrap a {
+  color: #ffffff;
+}
+
+.footer-wrap .logo {
+  margin-bottom: 30px;
+}
+
+.footer-wrap .info-box {
+  line-height: 1.8;
+}
+
+.footer-wrap .info-list,
+.footer-wrap .info-list dl {
+  display: flex;
+  font-size: 13px;
+}
+
+.footer-wrap .title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.footer-wrap .info-list dl {
+  position: relative;
+  margin-right: 25px;
+}
+
+.footer-wrap .info-list dl::after {
+  content: '';
+  position: absolute;
+  right: -14px;
+  bottom: 0;
+  width: 1.5px;
+  height: 12px;
+  background-color: #ffffff;
+  transform: translateY(-50%);
+}
+
+.footer-wrap .info-list dl:last-child::after {
+  display: none;
+}
+
+.footer-wrap .info-list a,
+.footer-wrap .copyright a {
+  font-weight: 700;
+  margin-left: 15px;
+}
+
+.footer-wrap .copyright {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.footer-wrap .copyright div {
+  display: flex;
+}
+
+.footer-wrap .info {
+  margin-top: 23px;
+}
+
+.footer-wrap .info ul {
+  display: flex;
+}
+
+.footer-wrap .info ul li a {
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 40px;
+}
+
+.footer-wrap .info ul li a::after {
+  content: '';
+  position: absolute;
+  right: -20px;
+  bottom: 3px;
+  width: 1.5px;
+  height: 15px;
+  background-color: #ffffff;
+}
+
+.footer-wrap .info ul li:last-child a::after {
+  display: none;
+}
+
+.footer-wrap .family-box {
+  position: absolute;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-wrap .family-box span {
+  font-weight: 700;
+  color: #3c3934;
+  line-height: 1;
+}
+
+.footer-wrap .brand-site-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 490px;
+  height: 40px;
+  padding: 0 12px 0 19px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.footer-wrap .sns ul {
+  display: flex;
+  justify-content: end;
+  margin-top: 18px;
+}
+
+.footer-wrap .sns ul li {
+  margin-right: 13px;
+}
+
+.footer-wrap .sns ul li:last-child {
+  margin-right: 0;
+}

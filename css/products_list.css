@@ -1,0 +1,382 @@
+:root {
+  --primary-color1: #3d3a35;
+  --primary-color2: #b60217;
+}
+
+body {
+  max-width: 1920px;
+  min-width: 1280px;
+}
+
+#container {
+  position: relative;
+  min-width: 1280px;
+  margin-bottom: 411px;
+  z-index: 999;
+  background-color: #ffffff;
+}
+
+/** header */
+#header-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 100;
+}
+
+.logo {
+  display: block;
+  width: 170px;
+  height: 38px;
+  background-image: url(/img/logo.svg);
+}
+
+.gnb ul {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  height: 34px;
+  padding-right: 40px;
+  font-size: 13px;
+  list-style: none;
+}
+
+.gnb ul li {
+  display: flex;
+  align-items: center;
+  padding-left: 11px;
+}
+
+.gnb ul li a {
+  color: var(--primary-color1);
+}
+
+.gnb ul li:nth-child(2)::before,
+.gnb ul li:nth-child(3)::before,
+.gnb ul li:nth-child(4)::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  height: 11px;
+  background: var(--primary-color1);
+  margin-right: 11px;
+}
+
+#logo {
+  display: block;
+  width: 170px;
+  height: 38px;
+  fill: red;
+  background-repeat: no-repeat;
+  background-image: url(/img/top_logo.svg);
+}
+
+.logo-box {
+  padding: 0 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  padding: 0 40px 0 40px;
+}
+
+.btn-all-menu {
+  position: relative;
+  width: 30px;
+  height: 28px;
+}
+
+.btn-all-menu .line {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #333333;
+}
+
+.btn-all-menu .short-line {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 2px;
+  background-color: #333333;
+}
+
+.btn-all-menu .line:nth-child(3) {
+  bottom: 0;
+}
+
+.navbar-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  padding-left: 55px;
+}
+
+.navbar li a {
+  margin-right: 60px;
+  font-size: 18px;
+  color: var(--primary-color1);
+}
+
+.right-box {
+  display: flex;
+}
+
+.right-box ul {
+  display: flex;
+}
+
+.search-box {
+  position: relative;
+  width: 225px;
+  height: 34px;
+  border-bottom: 1px solid var(--primary-color1);
+}
+
+.search-input {
+  padding: 5px 45px 5px 0;
+  border: none;
+  background-color: transparent;
+}
+
+.search-input::placeholder {
+  color: var(--primary-color1);
+  font-size: 15px;
+}
+
+.btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(/img/search_btn.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.navbar-cart {
+  position: relative;
+  display: block;
+  width: 38px;
+  height: 34px;
+  margin-left: 15px;
+  background-image: url(/img/navbar_cart.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.navbar-cart span {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  color: #ffffff;
+}
+
+.navbar-mypage {
+  display: block;
+  width: 30px;
+  height: 34px;
+  margin-left: 10px;
+  background-image: url(/img/navbar_mypage.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.content {
+  margin-top: 100px;
+  padding: 0 40px;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+  border-bottom: 1px solid #3c393499;
+}
+
+.tabs ul {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.tabs ul li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-left: 57px;
+}
+
+.tabs ul li a {
+  white-space: nowrap;
+}
+
+.tabs .on {
+  font-weight: 600;
+  color: #3c3934;
+}
+
+.category {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 140px;
+  height: 85px;
+  font-size: 19px;
+  font-weight: 600;
+  color: #3c3934;
+}
+
+.category::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #3c3934;
+}
+
+.arr-down {
+  position: absolute;
+  width: 13px;
+  height: 7px;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-image: url(/img/arr_dw.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prod-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 85px;
+  padding-top: 25px;
+  color: var(--primary-color1);
+}
+
+.prod-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.prod-wrap .list-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  padding-right: 20px;
+  padding-bottom: 100px;
+}
+
+.prod-wrap div img {
+  width: 100%;
+}
+
+.prod-wrap .text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-top: 20px;
+}
+
+.prod-wrap .text-box h5 {
+  font-size: 22px;
+  color: #333333;
+  padding-top: 10px;
+  margin-bottom: 35px;
+}
+
+.prod-wrap .price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  color: var(--primary-color1);
+  white-space: nowrap;
+}
+
+.prod-wrap .price .cost {
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.prod-wrap .price .discount-price {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.prod-wrap .price .discount-rate {
+  margin-left: 17px;
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--primary-color2);
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.pagination ul li {
+  font-size: 16px;
+  color: #222222;
+  margin: 0 22px;
+}
+
+.pagination span {
+  position: relative;
+}
+
+.pagination span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-color2);
+  transform: translateX(-50%);
+}
+
+.pagination .on {
+  color: var(--primary-color2);
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    width: 100vw;
+    min-width: 1280px;
+  }
+
+  footer {
+    min-width: 1280px;
+  }
+}
