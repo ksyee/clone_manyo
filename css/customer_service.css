@@ -4,6 +4,11 @@
   --all-menu-btn-color: #333333;
 }
 
+body {
+  max-width: 1920px;
+  min-width: 1280px;
+}
+
 /** content */
 .content {
   display: flex;
@@ -49,7 +54,7 @@
 .side-box .info-box p {
   font-size: 14px;
   color: #212121;
-	line-height: 1.6;
+  line-height: 1.6;
   margin-top: 19px;
 }
 
@@ -62,6 +67,7 @@
 .main-cont .search-box {
   display: flex;
   width: 100%;
+  margin-bottom: 35px;
 }
 
 .main-cont .search-box div:nth-child(1) {
@@ -119,4 +125,83 @@
   color: var(--primary-color2);
   border: 2px solid var(--primary-color2);
   border-radius: 5px;
+}
+
+.main-cont .board .board-title {
+  font-size: 21px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.main-cont .board .board-list {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.main-cont .board .board-list li:nth-child(1) {
+  padding-left: 0;
+}
+
+.main-cont .board .board-list li {
+  position: relative;
+  padding: 0 10px;
+}
+
+.main-cont .board .board-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 1px;
+  height: 13px;
+  background-color: #dbdbdb;
+}
+
+.main-cont .board .board-list li:nth-child(1)::before {
+  display: none;
+}
+
+.main-cont .board .board-list li a {
+  font-size: 14px;
+}
+
+.main-cont .board .board-list li a.on {
+  font-weight: 700;
+  color: var(--primary-color2);
+}
+
+.main-cont .board .board-table {
+  width: 100%;
+  border-top: 2px solid #000;
+  border-collapse: collapse;
+}
+
+.main-cont .board .board-table tr.question td {
+  width: 100%;
+  font-size: 18px;
+  color: #333333;
+  padding: 24px 16px 23px 42px;
+  border-bottom: 2px solid #dddddd;
+  background-image: url(/img/icon_qna_q.png);
+  background-repeat: no-repeat;
+  background-position: 13px center;
+}
+
+.main-cont .board .board-table tr.question td p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main-cont .board .board-table tr.answer {
+  display: none;
+  background-color: #f9f9f9;
+}
+
+.main-cont .board .board-table tr.answer td {
+  width: 100%;
+  padding: 24px 42px 24px;
+}
+
+.answer-on {
+  display: block !important;
 }
