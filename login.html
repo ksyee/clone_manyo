@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/login.css" />
-    <link rel="stylesheet" href="/css/footer" />
+    <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
     <div id="container">
       <header id="header-wrap">
         <div class="gnb">
           <ul>
-            <li><a href="login.html">로그인</a></li>
+            <li><a href="/login.html">로그인</a></li>
             <li><a href="#">주문배송</a></li>
             <li><a href="#">멤버십</a></li>
-            <li><a href="#">고객센터</a></li>
+            <li><a href="/customer_service.html">고객센터</a></li>
           </ul>
         </div>
         <div>
@@ -59,14 +60,197 @@
           </div>
         </nav>
       </header>
-      <section class="content">
-        <div class="login-kakao">
-          <div class="text-box">
-            <p>아이디와 비밀번호 입력하기 귀찮으시죠?</p>
-            <p>카카오로 1초만에 로그인하세요.</p>
+      <div class="content-wrap">
+        <section class="content">
+          <div class="login-kakao">
+            <div class="text-box">
+              <p>아이디와 비밀번호 입력하기 귀찮으시죠?</p>
+              <p>카카오로 1초만에 로그인하세요.</p>
+            </div>
+            <div class="member-sns-kakao">
+              <a href="#">카카오 1초 로그인/회원가입</a>
+            </div>
+            <div class="login-benefit">
+              <img src="/img/login_benefit.jpg" alt="" />
+            </div>
+          </div>
+          <div class="or-line">
+            <span class="line"></span>
+            <span class="line-text">또는</span>
+            <span class="line"></span>
+          </div>
+          <div class="member-tab">
+            <div class="pick">
+              <button>기존 회원이세요?</button>
+            </div>
+            <div>
+              <button>비회원 배송조회</button>
+            </div>
+          </div>
+          <div class="login-box">
+            <div class="member-login-box login-box-on">
+              <form id="form-login" action="">
+                <div>
+                  <div class="input-box">
+                    <input type="text" placeholder="아이디" />
+                    <input type="password" placeholder="비밀번호" />
+                  </div>
+                  <div class="remember-chk">
+                    <div>
+                      <input type="checkbox" id="remember-id" />
+                      <label for="remember-id" class="remember-id"
+                        >아이디 저장</label
+                      >
+                      <input type="checkbox" id="remember-pw" />
+                      <label for="remember-pw" class="remember-pw"
+                        >비밀번호 저장</label
+                      >
+                    </div>
+                    <div>
+                      <a href="#" class="find-member">아이디/비밀번호 찾기</a>
+                    </div>
+                  </div>
+                  <button type="submit" class="member-login">
+                    기존회원 로그인
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="nomember-login-box">
+              <form id="form-order-login" action="">
+                <div>
+                  <div class="input-box">
+                    <input type="text" placeholder="주문자명" />
+                    <input type="text" placeholder="주문번호" />
+                  </div>
+                  <button type="submit" class="member-login">
+                    주문 조회하기
+                  </button>
+                </div>
+              </form>
+              <div class="caution-msg">
+                <p>
+                  주문번호와 비밀번호를 잊으신 경우, 고객센터로 문의하여 주시기
+                  바랍니다.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="or-line">
+            <span class="line"></span>
+            <span class="line-text">또는</span>
+            <span class="line"></span>
+          </div>
+          <div class="join-member">
+            <a>
+              <button class="join">일반회원 가입하기</button>
+            </a>
+            <a>
+              <button class="join-naver">NAVER로 로그인</button>
+            </a>
+          </div>
+          <div class="kakao-login-text">
+            <p>카카오 1초 로그인/회원가입 이란?</p>
+            <p>카카오 싱크를 활용한 간편 로그인/가입 기능입니다.</p>
+          </div>
+          <div class="login-logo">
+            <img src="/img/logo-grey.png" />
+            <img src="/img/icon-x.png" />
+            <span>카카오싱크 부스터</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- footer -->
+    </div>
+    <footer>
+      <div class="footer-wrap">
+        <a class="logo"><img src="/img/footer_logo.png" /></a>
+        <div class="title">마녀공장</div>
+        <div class="info-box">
+          <div class="info-list">
+            <dl>
+              <dt>대표 :&nbsp;</dt>
+              <dd>유근직</dd>
+            </dl>
+            <dl>
+              <dt>주소 :&nbsp;</dt>
+              <dd>서울특별시 강서구 공항대로 518 마녀공장</dd>
+            </dl>
+            <dl>
+              <dt>사업자등록번호 :&nbsp;</dt>
+              <dd>123-45-67890</dd>
+              <a>[사업자번호조회]</a>
+            </dl>
+          </div>
+          <div class="info-list">
+            <dl>
+              <dt>통신판매업신고번호 :&nbsp;</dt>
+              <dd>제2023-어디어디장소-1234호</dd>
+            </dl>
+            <dl>
+              <dt>개인정보보호책임자</dt>
+              <dd>아무개</dd>
+            </dl>
+            <dl>
+              <dt>이메일 :&nbsp;</dt>
+              <dd>email_cs@email.com</dd>
+            </dl>
+            <dl>
+              <dt>고객센터 :&nbsp;</dt>
+              <dd>02-1234-5678</dd>
+            </dl>
+            <dl>
+              <dt>팩스번호 :&nbsp;</dt>
+              <dd>02-1234-5678</dd>
+            </dl>
+          </div>
+          <div class="copyright">
+            <p>copyright &copy; manyofactory all rights reserved</p>
+            <div>
+              <p>
+                안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여
+                서비스를 제공하고 있습니다.
+              </p>
+              <a>[가입확인]</a>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+        <div class="info">
+          <ul>
+            <li><a>개인정보처리방침</a></li>
+            <li><a>이용약관</a></li>
+            <li><a>제휴문의</a></li>
+            <li><a>고객센터</a></li>
+            <li><a>IR정보</a></li>
+          </ul>
+        </div>
+        <div class="family-box">
+          <div class="brand-site-box">
+            <span>Brand Site</span>
+            <img src="/img/arrow_down.png" />
+          </div>
+          <div class="sns">
+            <ul>
+              <li>
+                <a><img src="/img/icon-insta.png" alt="" /></a>
+              </li>
+              <li>
+                <a><img src="/img/icon-youtube.png" alt="" /></a>
+              </li>
+              <li>
+                <a><img src="/img/icon-kakao.png" alt="" /></a>
+              </li>
+              <li>
+                <a><img src="/img/icon-twitter.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="/js/common.js"></script>
   </body>
 </html>
