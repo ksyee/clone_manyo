@@ -1,0 +1,122 @@
+:root {
+  --primary-color1: #3d3a35;
+  --primary-color2: #b60217;
+  --all-menu-btn-color: #333333;
+}
+
+/** content */
+.content {
+  display: flex;
+  padding: 80px 40px 0;
+}
+
+/** side menu */
+.side-box {
+  width: 200px;
+}
+
+.side-box .sub-menu h3 {
+  font-size: 32px;
+  color: #212121;
+  margin-bottom: 32px;
+}
+
+.side-box .sub-menu ul {
+  padding-bottom: 31px;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.side-box .sub-menu ul li {
+  margin-top: 15px;
+}
+
+.side-box .sub-menu ul li a {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.side-box .info-box {
+  padding-top: 32px;
+}
+
+.side-box .info-box h5 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #212121;
+}
+
+.side-box .info-box p {
+  font-size: 14px;
+  color: #212121;
+	line-height: 1.6;
+  margin-top: 19px;
+}
+
+/** main content */
+.main-cont {
+  padding-left: 80px;
+  width: 100%;
+}
+
+.main-cont .search-box {
+  display: flex;
+  width: 100%;
+}
+
+.main-cont .search-box div:nth-child(1) {
+  width: 70%;
+}
+
+.main-cont .search-box .title {
+  font-size: 24px;
+  color: #212121;
+  padding-bottom: 10px;
+}
+
+.main-cont .search-box input {
+  width: 70%;
+  height: 50px;
+  padding: 0 10px;
+  border: none;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.main-cont .search-box .btn-search {
+  width: 100px;
+  height: 50px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 5px;
+  background-color: var(--primary-color2);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-cont .search-box .go-inquiry {
+  padding: 10px 0 10px 50px;
+  border-left: 1px solid #dbdbdb;
+}
+
+.main-cont .search-box .go-inquiry p {
+  font-size: 16px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.main-cont .search-box .go-inquiry a {
+  display: block;
+  width: 100px;
+  height: 35px;
+  line-height: 32px;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--primary-color2);
+  border: 2px solid var(--primary-color2);
+  border-radius: 5px;
+}
