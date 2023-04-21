@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="css/main.css" />
@@ -60,10 +64,46 @@
           </div>
         </nav>
       </header>
+      <header id="header-flex">
+        <div class="left-box">
+          <a href="#" class="btn-all-menu">
+            <span class="line"></span>
+            <span class="short-line"></span>
+            <span class="line"></span>
+          </a>
+          <div class="logo-box">
+            <a href="index.html" class="logo"></a>
+          </div>
+          <ul class="navbar">
+            <li><a href="products_list.html">전체</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">베스트</a></li>
+            <li><a href="#">특가</a></li>
+            <li><a href="#">브랜드</a></li>
+          </ul>
+        </div>
+        <div class="right-box">
+          <div class="search-box">
+            <input
+              class="search-input"
+              type="text"
+              placeholder="NEW 히더 진정 라인"
+              onfocus="this.placeholder=''"
+              onblur="this.placeholder='NEW 히더 진정 라인'" />
+            <button class="btn-search"></button>
+          </div>
+          <ul>
+            <li>
+              <a href="#" class="navbar-cart"><span>0</span></a>
+            </li>
+            <li><a href="#" class="navbar-mypage"></a></li>
+          </ul>
+        </div>
+      </header>
       <div id="contents-wrap">
         <section class="slide-wrap">
-          <div class="slide-list">
-            <div class="slide">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
               <img src="/img/main_slideBox_img1.jpg" />
               <div class="slide-textBox">
                 <h5 class="slide-mainText">
@@ -76,11 +116,11 @@
                 >
               </div>
             </div>
-            <div class="slide">
+            <div class="swiper-slide">
               <img src="/img/main_slideBox_img2.png" />
             </div>
-            <div class="slide">
-              <img src="/img/main_slideBox_img3.jpg" />
+            <div class="swiper-slide">
+              <img src="/img/main_slideBox_img3.jpg"/>
             </div>
           </div>
         </section>
@@ -706,6 +746,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="/js/common.js"></script>
   </body>

@@ -7,6 +7,14 @@
 body {
   max-width: 1920px;
   min-width: 1280px;
+  margin: 0 auto;
+}
+
+#container {
+  position: relative;
+  margin-bottom: 411px;
+  background-color: #ffffff;
+  z-index: 100;
 }
 
 /** content */
@@ -176,7 +184,7 @@ body {
   border-collapse: collapse;
 }
 
-.main-cont .board .board-table tr.question td {
+.main-cont .board .board-table div.question div {
   width: 100%;
   font-size: 18px;
   color: #333333;
@@ -187,21 +195,58 @@ body {
   background-position: 13px center;
 }
 
-.main-cont .board .board-table tr.question td p:hover {
+.main-cont .board .board-table div.question div p:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.main-cont .board .board-table tr.answer {
-  display: none;
+.main-cont .board .board-table div.answer {
+  height: 0;
   background-color: #f9f9f9;
+  overflow: hidden;
+  transition: all 0.3s;
 }
 
-.main-cont .board .board-table tr.answer td {
-  width: 100%;
+.main-cont .board .board-table div.answer div {
   padding: 24px 42px 24px;
 }
 
-.answer-on {
-  display: block !important;
+.pagination {
+  margin-top: 50px;
+  height: 100%;
+  margin-bottom: 143px;
+}
+
+.pagination ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.pagination ul li {
+  font-size: 16px;
+  color: #222222;
+  margin: 0 22px;
+}
+
+.pagination span {
+  position: relative;
+}
+
+.pagination span::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: var(--primary-color2);
+  transform: translateX(-50%);
+}
+
+.pagination .on {
+  color: var(--primary-color2);
 }

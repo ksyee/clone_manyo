@@ -1,10 +1,16 @@
+:root {
+  --primary-color1: #3d3a35;
+  --primary-color2: #b60217;
+  --all-menu-btn-color: #333333;
+}
+
 /** header */
 #header-wrap {
   top: 0;
   left: 0;
   width: 100%;
   height: 160px;
-  z-index: 100;
+  z-index: 999;
 }
 
 #content-wrap {
@@ -157,7 +163,7 @@
   cursor: pointer;
 }
 
-.navbar-cart {
+#header-wrap .navbar-cart {
   position: relative;
   display: block;
   width: 38px;
@@ -168,16 +174,119 @@
   background-repeat: no-repeat;
 }
 
-.navbar-cart span {
+#header-wrap .navbar-cart span {
   position: absolute;
   top: 3px;
   right: 6px;
   color: #ffffff;
 }
 
-.navbar-mypage {
+#header-wrap .navbar-mypage {
   display: block;
   width: 30px;
+  height: 34px;
+  margin-left: 10px;
+  background-image: url(/img/navbar_mypage.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+/** header-flex */
+#header-flex {
+  position: fixed;
+  top: -90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  background-color: #ffffff;
+  z-index: 200;
+  transition: all 0.3s ease-in-out;
+}
+
+#header-flex.on {
+  transform: translateY(90px);
+}
+
+#header-flex .left-box,
+#header-flex .right-box {
+  display: flex;
+  align-items: center;
+}
+
+#header-flex .left-box {
+  padding-left: 40px;
+}
+
+#header-flex .left-box .logo-box {
+  padding: 0 20px;
+}
+
+#header-flex .left-box ul.navbar {
+  padding-left: 0;
+}
+
+#header-flex .left-box ul.navbar a {
+  font-size: 15px;
+}
+
+#header-flex .right-box {
+  padding-right: 40px;
+}
+
+#header-flex .search-box {
+  position: relative;
+  width: 225px;
+  height: 34px;
+  border-bottom: 1px solid var(--primary-color1);
+}
+
+#header-flex .search-input {
+  padding: 5px 45px 5px 0;
+  border: none;
+  background-color: transparent;
+}
+
+#header-flex .search-input::placeholder {
+  color: var(--primary-color1);
+  font-size: 10px;
+}
+
+#header-flex .btn-search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 25px;
+  background-image: url(/img/search_btn.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+#header-flex .navbar-cart {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 34px;
+  margin-left: 15px;
+  background-image: url(/img/navbar_cart.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#header-flex .navbar-cart span {
+  position: absolute;
+  top: 6px;
+  right: 4.5px;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.navbar-mypage {
+  display: block;
+  width: 24px;
   height: 34px;
   margin-left: 10px;
   background-image: url(/img/navbar_mypage.svg);

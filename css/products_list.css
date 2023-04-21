@@ -3,16 +3,13 @@
   --primary-color2: #b60217;
 }
 
-body {
-  max-width: 1920px;
-  min-width: 1280px;
-}
-
 #container {
   position: relative;
+  max-width: 1920px;
   min-width: 1280px;
+  margin: 0 auto;
   margin-bottom: 411px;
-  z-index: 999;
+  z-index: 100;
   background-color: #ffffff;
 }
 
