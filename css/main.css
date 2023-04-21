@@ -18,7 +18,7 @@ body {
   margin: 0 auto;
   margin-bottom: 411px;
   background-color: #ffffff;
-  z-index: 999;
+  z-index: 200;
 }
 
 /** header */
@@ -31,16 +31,22 @@ body {
   z-index: 100;
 }
 
-/*? slide */
+/*? main banner slide */
 .slide-wrap {
+  width: 100%;
+  height: 100%;
   overflow: hidden;
+}
+
+.slide-wrap .swiper-slide {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .slide-wrap .swiper-slide img {
   width: 100%;
-  min-width: 1280px;
   height: 100%;
-  max-height: 1080px;
   object-fit: cover;
 }
 
@@ -142,7 +148,7 @@ body {
   overflow: hidden;
 }
 
-.on {
+.best-sellers .on {
   font-weight: 700;
   color: var(--primary-color2) !important;
 }

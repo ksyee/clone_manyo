@@ -1,4 +1,45 @@
 $(function () {
+  // common function
+  var sideMenu = $('#container .side-menu');
+  var hbgBtn = $('#header-wrap .nav .btn-all-menu');
+  var hbgBtnFlex = $('#header-flex .nav .btn-all-menu');
+  var closeBtn = $('#container .side-menu .btn-close');
+
+  hbgBtn.click(function () {
+    sideMenu.addClass('on');
+    $('.bg-dark').addClass('on');
+  }); // 햄버거 버튼 클릭 시 사이드 메뉴 on
+
+  hbgBtnFlex.click(function () {
+    sideMenu.addClass('on');
+    $('.bg-dark').addClass('on');
+  }); // 햄버거 버튼 클릭 시 사이드 메뉴 on
+
+  $('.bg-dark').click(function () {
+    sideMenu.removeClass('on');
+    $('.bg-dark').removeClass('on');
+  }); // 배경 클릭 시 사이드 메뉴 off
+
+  closeBtn.click(function () {
+    sideMenu.removeClass('on');
+    $('.bg-dark').removeClass('on');
+  }); // 닫기 버튼 클릭 시 사이드 메뉴 off
+
+  var categoryAll = $('#container .side-menu .category-all');
+  var subCategory = $('#container .side-menu .sub-category');
+  var subCategoryH = $('#container .side-menu .sub-category').outerHeight();
+  subCategory.css('height', subCategoryH);
+
+  console.log(subCategoryH);
+  categoryAll.click(function () {
+    categoryAll.toggleClass('on');
+    if (categoryAll.hasClass('on')) {
+      subCategory.css('height', subCategoryH);
+    } else {
+      subCategory.css('height', 0);
+    }
+  }); // side menu category accordion btn
+
   //header scroll event
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -27,6 +68,10 @@ $(function () {
   var swiper = new Swiper('.slide-wrap', {
     slidesPerView: 1,
     loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
   });
 
   /* login.html */
