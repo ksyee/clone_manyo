@@ -1,16 +1,10 @@
 $(function () {
   // common function
   var sideMenu = $('#container .side-menu');
-  var hbgBtn = $('#header-wrap .nav .btn-all-menu');
-  var hbgBtnFlex = $('#header-flex .nav .btn-all-menu');
+  var hbgBtn = $('.btn-all-menu');
   var closeBtn = $('#container .side-menu .btn-close');
 
   hbgBtn.click(function () {
-    sideMenu.addClass('on');
-    $('.bg-dark').addClass('on');
-  }); // 햄버거 버튼 클릭 시 사이드 메뉴 on
-
-  hbgBtnFlex.click(function () {
     sideMenu.addClass('on');
     $('.bg-dark').addClass('on');
   }); // 햄버거 버튼 클릭 시 사이드 메뉴 on

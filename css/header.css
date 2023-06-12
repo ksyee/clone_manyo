@@ -71,6 +71,7 @@
 
 #container > .side-menu .top-box .logo {
   margin-left: 30px;
+  background-repeat: no-repeat;
 }
 
 #container > .side-menu .category-all {
@@ -155,7 +156,7 @@
   display: block;
   width: 170px;
   height: 38px;
-  background-image: url(/img/logo.svg);
+  background-image: url(/pf_folder/project1_manyo/img/logo.svg);
 }
 
 .gnb ul {
@@ -195,7 +196,7 @@
   height: 38px;
   fill: red;
   background-repeat: no-repeat;
-  background-image: url(/img/top_logo.svg);
+  background-image: url(/pf_folder/project1_manyo/img/top_logo.svg);
 }
 
 .logo-box {
@@ -286,7 +287,7 @@
   right: 0;
   width: 25px;
   height: 25px;
-  background-image: url(/img/search_btn.svg);
+  background-image: url(/pf_folder/project1_manyo/img/search_btn.svg);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -298,7 +299,7 @@
   width: 38px;
   height: 34px;
   margin-left: 15px;
-  background-image: url(/img/navbar_cart.svg);
+  background-image: url(/pf_folder/project1_manyo/img/navbar_cart.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -315,7 +316,7 @@
   width: 30px;
   height: 34px;
   margin-left: 10px;
-  background-image: url(/img/navbar_mypage.svg);
+  background-image: url(/pf_folder/project1_manyo/img/navbar_mypage.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -388,7 +389,7 @@
   right: 0;
   width: 22px;
   height: 25px;
-  background-image: url(/img/search_btn.svg);
+  background-image: url(/pf_folder/project1_manyo/img/search_btn.svg);
   background-position: center center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -400,7 +401,7 @@
   width: 30px;
   height: 34px;
   margin-left: 15px;
-  background-image: url(/img/navbar_cart.svg);
+  background-image: url(/pf_folder/project1_manyo/img/navbar_cart.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -418,7 +419,7 @@
   width: 24px;
   height: 34px;
   margin-left: 10px;
-  background-image: url(/img/navbar_mypage.svg);
+  background-image: url(/pf_folder/project1_manyo/img/navbar_mypage.svg);
   background-position: center center;
   background-repeat: no-repeat;
 }
